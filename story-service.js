@@ -3,16 +3,16 @@
     var savedWordsObj = {};
     return {
       getWords: getWords,
-      sendWords: sendWords
+      setWords: setWords
     }
 
-    function getWords(wordsObj) {
+    function getWords() {
+      return savedWordsObj;
+    }
+
+    function setWords(wordsObj) {
       savedWordsObj = wordsObj;
       console.log(savedWordsObj);
-    }
-
-    function sendWords() {
-      return savedWordsObj;
     }
   }
 

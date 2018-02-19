@@ -8,9 +8,9 @@
     <p>{{ $ctrl.wordsToDisplay.adverb }}</p>
     `,
     controller: function(StoryService) {
-      var vm = this;
-      vm.wordsToDisplay = StoryService.sendWords();
-      console.log(vm.wordsToDisplay);
+      var $ctrl = this;
+      $ctrl.wordsToDisplay = StoryService.getWords();
+      console.log($ctrl.wordsToDisplay);
     }
   };
 
